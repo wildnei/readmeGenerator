@@ -26,7 +26,6 @@ Navigate to [Deployed Application](https://github.com/wildnei)
 
 ## Example
 
-
 ![Image](https://ik.imagekit.io/devdojo/readme_gif/generator_QvRsP_Qnk.gif)
 
 ## Project Owner
