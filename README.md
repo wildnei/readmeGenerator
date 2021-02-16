@@ -1,19 +1,37 @@
 
 
+## Table of Contents
 
-# Awesome README.md Generator
+* [Description](#description)
+* [Link to Deployed Application](#Link-to-deployed-application)
+* [How to Execute Application](#How-to-execute-application)
+* [Example](#example)
+* [Contact Information](#Contact-information)
+
+# Project
+
+## Awesome Generator of README
 
 ## Description
 
-This application will generate a professional readme.MD for any application that you might develop. The functionalities are very broad and includes even licensing. 
+This will generate a great readme file
 
 ## Link to deployed application
 
-Navigate to [Deployed Application](github.com/wildnei)
+Navigate to [Deployed Application](https://github.com/wildnei)
+
+## How to execute application
+
+``` npm install inquirer ```
+
+## Example
+
+
+![Image](https://ik.imagekit.io/devdojo/readme_gif/generator_QvRsP_Qnk.gif)
 
 ## Project Owner
 
-Wildnei Queiroz
+Wildnei
 
 ## Contact Information
 
@@ -21,7 +39,7 @@ For more information please contact: wildneisuane@gmail.com
 
 ## Github Profile
 
-For more projects please check my [GitHub](github.com/wildnei) profile
+For more projects please check my [GitHub](https://github.com/https://github.com/wildnei) profile
 
 ## Technologies used
 
@@ -250,10 +268,10 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
 Copyright 2021 Wildnei Queiroz
 
-</details>
+    </details>
 
 ## LinkedIn Profile
 
-linkedin.com/wildnei
+[LinkedIn Profile](https://linkedin.com/in/wildneisuane)
 
     

@@ -33,6 +33,12 @@ function promptUser() {
 
         {
             type: "input",
+            name: "executeCode",
+            message: "What command is required to execute your application? ex: npm install inquirer"
+        },
+
+        {
+            type: "input",
             name: "userName",
             message: "Please enter the name(s) of the participant(s) of this project"
         },
@@ -70,6 +76,13 @@ function promptUser() {
         },
         {
             type: "input",
+            name: "image",
+            message: "Please enter the URL of your deployed(jpeg,png or gif)"
+        },
+
+
+        {
+            type: "input",
             name: "linkedIn",
             message: "Enter your LinkedIn URL."
         },
@@ -82,7 +95,6 @@ function promptUser() {
         },
     ]);
 }
-
 
 
 function generateReadMe(answers) {
@@ -320,15 +332,24 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
 Copyright 2021 Wildnei Queiroz
 
-</details>`
+    </details>`
         } else {
             answers.license = "none"
         };
 
     return `
 
+## Table of Contents
 
-# ${answers.projectName}
+* [Description](#description)
+* [Link to Deployed Application](#Link-to-deployed-application)
+* [How to Execute Application](#How-to-execute-application)
+* [Example](#example)
+* [Contact Information](#Contact-information)
+
+# Project
+
+## ${answers.projectName}
 
 ## Description
 
@@ -337,6 +358,15 @@ ${answers.projectInfo}
 ## Link to deployed application
 
 Navigate to [Deployed Application](${answers.projectLink})
+
+## How to execute application
+
+\`\`\` ${ answers.executeCode } \`\`\`
+
+## Example
+
+
+![Image](${answers.image})
 
 ## Project Owner
 
@@ -365,7 +395,6 @@ ${answers.license}
     `
 
 }
-
 
 
 promptUser()
