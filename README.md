@@ -9,7 +9,7 @@ This application will generate a professional readme.MD for any application that
 
 ## Link to deployed application
 
-Navigate to [Deployed Application](github.com/wildnei)
+Navigate to [Deployed Application](https://github.com/wildnei)
 
 ## Project Owner
 
