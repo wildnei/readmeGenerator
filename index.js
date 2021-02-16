@@ -9,6 +9,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 // TODO: Create an array of questions for user input
 
 
+
 const languageArray = ["HTML", "CSS", "JavaScript", "Nodejs", "jQuery", "Bootstrap", "Angular", "VueJS", "Java", "Python", "GitHub"]
 function promptUser() {
 
@@ -72,7 +73,7 @@ function promptUser() {
         },
         {
             type: "input",
-            name: "linkedIn",
+            name: "linkedin",
             message: "Enter your LinkedIn URL."
         },
 
@@ -84,15 +85,18 @@ function promptUser() {
         },
 
         {
-            type: "input",
+            type: "list",
             name: "addLicense",
-            message: `Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-                      The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-                      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`,
-            when: function(answers) {
+            message: "Please select the type of License",
+            choices: ["MIT", "Customized"],
+            when: function (answers) {
                 return answers.comments !== 'No'
             }
-    },
+        },
+
+
+    ]);
+}
 
 // const questions = [];
 
@@ -112,8 +116,10 @@ function promptUser() {
 
 
 
+
 function generateReadMe(answers) {
-            return `
+
+    return `
 
 # ${answers.projectName}
 
@@ -143,22 +149,31 @@ ${answers.languageUsed}
 
 ## License
 
-${answers.License}
+${answers.addLicense = `<details>
+            <summary>
+                <a>Show License</a>
+            </summary>
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    </details>`}
 
-${answers.addLicense}
 
     `;
-        },
+}
+
+
+
 
 promptUser()
-            .then(function (answers) {
-                const readme = generateReadMe(answers);
+    .then(function (answers) {
+        const readme = generateReadMe(answers);
 
-                return writeFileAsync("README.md", readme);
-            })
-            .then(function () {
-                console.log("Successfully wrote readme.MD");
-            })
-            .catch(function (err) {
-                console.log(err);
-            });
+        return writeFileAsync("README.md", readme);
+    })
+    .then(function () {
+        console.log("Successfully wrote to readme.MD");
+    })
+    .catch(function (err) {
+        console.log(err);
+    });
