@@ -27,7 +27,7 @@ Navigate to [Deployed Application](https://github.com/wildnei/readmeGenerator)
 ## Example
 
 
-![Image](Link to image posted later)
+![Image](https://ik.imagekit.io/devdojo/readme_gif/generator_QvRsP_Qnk.gif)
 
 ## Project Owner
 
@@ -45,9 +45,13 @@ For more projects please check my [GitHub](https://github.com/https://github.com
 
 JavaScript,Nodejs
 
-## Technologies used
+## How to contribute to the project
 
-undefined
+Simply fork my application and merge the changes!
+
+## LinkedIn Profile
+
+[LinkedIn Profile](https://www.linkedin.com/in/wildneisuane/)
 
 ## License
 
@@ -271,11 +275,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 <br> **END OF TERMS AND CONDITIONS**
 
 Copyright 2021 Wildnei Queiroz
+ 
 
-    </details>
-
-## LinkedIn Profile
-
-[LinkedIn Profile](https://www.linkedin.com/in/wildneisuane/)
 
     

@@ -390,17 +390,19 @@ For more projects please check my [GitHub](https://github.com/${answers.github})
 
 ${answers.languageUsed}
 
-## Technologies used
+## How to contribute to the project
 
 ${answers.contribution}
+
+## LinkedIn Profile
+
+[LinkedIn Profile](${answers.linkedIn})
 
 ## License
 
 ${answers.license}
 
-## LinkedIn Profile
 
-[LinkedIn Profile](${answers.linkedIn})
 
     `
 
