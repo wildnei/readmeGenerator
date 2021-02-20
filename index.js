@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+//* Packages needed for this application
 
 const inquirer = require("inquirer");
 const fs = require("fs");
@@ -6,8 +6,7 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
-
+//* Create an array of questions for user input
 
 
 const languageArray = ["HTML", "CSS", "JavaScript", "Nodejs", "jQuery", "Bootstrap", "Angular", "VueJS", "Java", "Python", "GitHub"]
@@ -23,6 +22,12 @@ function promptUser() {
             type: "input",
             name: "projectLink",
             message: "Please add the link to your deployed application (use https://)"
+        },
+
+        {
+            type: "input",
+            name: "Contribution",
+            message: "How can people contribute to this project?"
         },
 
         {
@@ -96,6 +101,7 @@ function promptUser() {
     ]);
 }
 
+//* Answers to ReadMe
 
 function generateReadMe(answers) {
 
@@ -349,7 +355,7 @@ Copyright 2021 Wildnei Queiroz
 
 # Project
 
-## ${answers.projectName}
+${answers.projectName}
 
 ## Description
 
@@ -384,6 +390,10 @@ For more projects please check my [GitHub](https://github.com/${answers.github})
 
 ${answers.languageUsed}
 
+## Technologies used
+
+${answers.contribution}
+
 ## License
 
 ${answers.license}
@@ -396,6 +406,7 @@ ${answers.license}
 
 }
 
+//* ReadMe Generator
 
 promptUser()
     .then(function (answers) {

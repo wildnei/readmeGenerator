@@ -10,27 +10,28 @@
 
 # Project
 
-## Awesome Generator of README
+ReadME Generator
 
 ## Description
 
-This will generate a great readme file
+This file will generate a great readme based on the user input
 
 ## Link to deployed application
 
-Navigate to [Deployed Application](https://github.com/wildnei)
+Navigate to [Deployed Application](https://github.com/wildnei/readmeGenerator)
 
 ## How to execute application
 
-``` npm install inquirer ```
+``` node index.js ```
 
 ## Example
 
-![Image](https://ik.imagekit.io/devdojo/readme_gif/generator_QvRsP_Qnk.gif)
+
+![Image](Link to image posted later)
 
 ## Project Owner
 
-Wildnei
+Wildnei Queiroz
 
 ## Contact Information
 
@@ -43,6 +44,10 @@ For more projects please check my [GitHub](https://github.com/https://github.com
 ## Technologies used
 
 JavaScript,Nodejs
+
+## Technologies used
+
+undefined
 
 ## License
 
@@ -271,6 +276,6 @@ Copyright 2021 Wildnei Queiroz
 
 ## LinkedIn Profile
 
-[LinkedIn Profile](https://linkedin.com/in/wildneisuane)
+[LinkedIn Profile](https://www.linkedin.com/in/wildneisuane/)
 
     
