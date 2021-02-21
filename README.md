@@ -27,7 +27,7 @@ Navigate to [Deployed Application](https://github.com/wildnei/readmeGenerator)
 ## Example
 
 
-![Image](https://ik.imagekit.io/devdojo/readme_gif/generator_QvRsP_Qnk.gif)
+![Image](https://ik.imagekit.io/devdojo/readme_gif/generatorGif_6E1zVdIsC.gif)
 
 ## Project Owner
 
